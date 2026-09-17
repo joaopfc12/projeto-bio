@@ -164,3 +164,21 @@ form button:hover {
 #texto-extra {
   display: none;
 }
+
+body.tema-escuro {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.tema-escuro section {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.tema-escuro section h2 {
+  border-bottom-color: #f0f0f0;
+}
+
+body.tema-escuro #habilidades ul li {
+  background-color: #444;
+}
