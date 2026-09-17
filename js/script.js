@@ -10,3 +10,9 @@ botaoMostrarMais.addEventListener("click", function() {
     botaoMostrarMais.textContent = "Mostrar mais";
   }
 });
+
+const botaoTema = document.getElementById("btn-tema");
+
+botaoTema.addEventListener("click", function() {
+  document.body.classList.toggle("tema-escuro");
+});
