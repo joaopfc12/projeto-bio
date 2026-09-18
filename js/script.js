@@ -16,3 +16,10 @@ const botaoTema = document.getElementById("btn-tema");
 botaoTema.addEventListener("click", function() {
   document.body.classList.toggle("tema-escuro");
 });
+
+const botaoMenu = document.getElementById("btn-menu");
+const menuLista = document.querySelector("nav ul");
+
+botaoMenu.addEventListener("click", function() {
+  menuLista.classList.toggle("menu-aberto");
+});
