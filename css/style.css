@@ -200,3 +200,23 @@ body.tema-escuro section h2 {
 body.tema-escuro #habilidades ul li {
   background-color: #444;
 }
+
+#btn-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #btn-menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.menu-aberto {
+    display: flex;
+  }
+}
