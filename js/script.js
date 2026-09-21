@@ -53,3 +53,6 @@ formulario.addEventListener("submit", function(evento) {
   statusDiv.className = "sucesso";
   formulario.reset();
 });
+
+const anoAtual = document.getElementById("ano-atual");
+anoAtual.textContent = new Date().getFullYear();
