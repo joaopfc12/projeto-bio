@@ -17,13 +17,20 @@ const botaoTema = document.getElementById("btn-tema");
 const iconeTema = document.getElementById("icone-tema");
 
 if (botaoTema && iconeTema) {
+  if (localStorage.getItem("tema") === "escuro") {
+    document.body.classList.add("tema-escuro");
+    iconeTema.src = "img/icone-escuro.png";
+  }
+
   botaoTema.addEventListener("click", function() {
     document.body.classList.toggle("tema-escuro");
 
     if (document.body.classList.contains("tema-escuro")) {
       iconeTema.src = "img/icone-escuro.png";
+      localStorage.setItem("tema", "escuro");
     } else {
       iconeTema.src = "img/icone-claro.png";
+      localStorage.setItem("tema", "claro");
     }
   });
 }
