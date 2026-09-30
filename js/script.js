@@ -1,7 +1,6 @@
 const botaoMostrarMais = document.getElementById("btn-mostrar-mais");
 const textoExtra = document.getElementById("texto-extra");
 
-textoExtra.style.display = "none"
 botaoMostrarMais.addEventListener("click", function() {
   if (textoExtra.style.display === "none") {
     textoExtra.style.display = "inline";
@@ -13,9 +12,16 @@ botaoMostrarMais.addEventListener("click", function() {
 });
 
 const botaoTema = document.getElementById("btn-tema");
+const iconeTema = document.getElementById("icone-tema");
 
 botaoTema.addEventListener("click", function() {
   document.body.classList.toggle("tema-escuro");
+
+  if (document.body.classList.contains("tema-escuro")) {
+    iconeTema.src = "img/icone-escuro.png";
+  } else {
+    iconeTema.src = "img/icone-claro.png";
+  }
 });
 
 const botaoMenu = document.getElementById("btn-menu");
