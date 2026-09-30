@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joao Felipe Paranhos Ferreira da Costa - Bio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <img src="img/foto.jpg" alt="Foto de perfil de Joao Felipe Paranhos Ferreira da Costa">
+  <h1>joao felipe paranhos ferreira da costa</h1>
+
+  <button id="btn-menu">☰</button>
+  <nav>
+    <ul>
+      <li><a href="index.html">Sobre Mim</a></li>
+      <li><a href="habilidades.html">Habilidades</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <button id="btn-tema">
+    <img id="icone-tema" src="img/icone-claro.png" alt="Alternar tema" width="32" height="32">
+  </button>
+</header>
+
+<section id="contato">
+  <h2>Contato</h2>
+
+  <form id="form-contato">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+
+    <div id="mensagem-status"></div>
+  </form>
+</section>
+
+<footer>
+  <div class="redes-sociais">
+    <a href="https://github.com/joaopfc12" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/joao-felipe-b5a1933ba?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+  </div>
+
+  <p>&copy; <span id="ano-atual"></span> João Felipe Paranhos Ferreira da Costa. Todos os direitos reservados.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
