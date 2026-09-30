@@ -2,6 +2,8 @@ const botaoMostrarMais = document.getElementById("btn-mostrar-mais");
 const textoExtra = document.getElementById("texto-extra");
 
 if (botaoMostrarMais && textoExtra) {
+  textoExtra.style.display = "none";
+
   botaoMostrarMais.addEventListener("click", function() {
     if (textoExtra.style.display === "none") {
       textoExtra.style.display = "inline";
